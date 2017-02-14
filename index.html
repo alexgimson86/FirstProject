@@ -1,0 +1,61 @@
+<html>
+	<head>
+		 <meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+		}
+		</style>
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/index.js"></script>
+		<script src="css/bootstrap/js/bootstrap.min.js"></script>
+	
+	</head>
+	<body>
+		
+		<div id="userInfo">
+		</div><br>
+		<button onclick="unhideAdd()" type="button" id="addButton" class="btn btn-default">add</button>
+		<button onclick="unhideEdit()"type="button" id="editButton" class="btn btn-primary">edit</button>
+		<button onclick="unhideDelete()" type="button" id="deleteButton" class="btn btn-success">delete</button>
+		
+		<form id="addPersonForm">
+			  name:<br>
+			  <input type="text" name="firstname" id="name"><br/>
+			  owner-Id:<br>
+			  <input type="text" name="id" id="ownerId"><br>
+			  Exp Date:<br>
+			  <input type="text" name="expDate" id="expDate"><br>
+			  Date updated:<br>
+			  <input type="text" name="dateUpdated" id="dateUpdated"><br>
+			  product code:<br>
+			  <input type="text" name="prodCode" id="prodCode"><br>
+			  <div>
+				<button onclick="addData()" class="dropbtn">Add</button><br>
+				<br><button onclick="hideAll()" class="dropbtn">cancel</button><br>
+			  </div>
+		</form>
+		<div>
+			<form id="editPersonForm">
+				row number:<br>
+				<input type="text" name="rowNumber" id="rowNumberEdit"><br>
+				<br><button onclick="editData()" class="dropbtn">edit</button><br>
+				<br><button onclick="hideAll()" class="dropbtn">cancel</button><br>
+			</form>
+		</div>
+		<div>
+			<form id="deletePersonForm">
+				Owner Id:<br>
+				<input type="text" name="rowNumber" id="deleteOwnerId"><br>
+				<br><button onclick="deleteData()" class="dropbtn">delete</button><br>
+				<br><button onclick="hideAll()" class="dropbtn">cancel</button><br>
+			</form>
+		</div>
+			
+	</body>
+</html>
