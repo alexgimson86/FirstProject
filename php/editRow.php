@@ -19,7 +19,7 @@
 			}
 			$count++;
 		}
-		echo "<table>";
+		echo '<table class="table table-border table-hover">';
 			echo "<tr> ";
 				echo "<th> Row Number </th>";
 				echo "<th> Name </th>";
@@ -35,7 +35,7 @@
 			$result = $conn->query($showTable);
 			while($row = $result->fetch_assoc()){
 				echo "<tr><td>". $count . "</td><td>" . $row["OwnerName"]. "</td><td>" . $row["OwnerID"]. "</td><td> " . 
-				$row["ExpirationDate"]. "</td><td>" . $row["DateUpdated"]. "</td><td>" . $row["ProdCode"] . "</td><tr>";
+				$row["ExpirationDate"]. "</td><td>" . $row["DateUpdated"]. "</td><td>" . $row["ProdCode"] . "</td></tr>";
 				$count++;
 			}
 			echo "</table>";
